@@ -29,6 +29,13 @@
     <a href="market://details?id=com.google.android.talk">
         <img src="icons/Icon.png" id="TileIcon" width="320" height="320" class="centered" />
     </a>
+    <script>
+    window.oncontextmenu = function(event) {
+        event.preventDefault();
+        event.stopPropagation();
+        return false;
+    };
+    </script>
 </body>
 
 </html>
